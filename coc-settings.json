@@ -1,0 +1,10 @@
+{
+	"languageserver": {
+		"zls" : {
+			"command": "C:/Users/fbald/AppData/Local/nvim-data/lsp_servers/zls/package/zls.exe",
+			"filetypes": ["zig"]
+		}
+	},
+	"zig.enabled": true,
+	"zig.path": "C:/Users/fbald/AppData/Local/nvim-data/lsp_servers/zls/package/zls.exe",
+}
