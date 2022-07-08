@@ -31,12 +31,18 @@ Plug 'windwp/nvim-autopairs'
 
 Plug 'sheerun/vim-polyglot'
 
+Plug 'shaunsingh/nord.nvim'
+
 call plug#end()
 
 let g:coc_global_extensions=['coc-omnisharp', 'coc-rust-analyzer', 'coc-zig']
 
 lua << EOF
-require("nvim-tree").setup()
+require("nvim-tree").setup({
+	filters = {
+		dotfiles = false,
+	},
+})
 
 require("nvim-lsp-installer").setup {}
 
@@ -64,4 +70,4 @@ let g:rustfmt_autosave = 1
 let g:rustfmt_emit_files = 1
 let g:rustfmt_fail_silently = 0
 
-:colorscheme dracula
+:colorscheme nord
